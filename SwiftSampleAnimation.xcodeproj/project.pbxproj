@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2545C6DC1A11301C008D9EE4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545C6DB1A11301C008D9EE4 /* ThirdViewController.swift */; };
+		25B8B7591A114FE200F0E1EE /* voiture.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B8B7581A114FE200F0E1EE /* voiture.png */; };
 		A5F1FF301A112D5400133D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1FF2F1A112D5400133D1C /* AppDelegate.swift */; };
 		A5F1FF321A112D5400133D1C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1FF311A112D5400133D1C /* FirstViewController.swift */; };
 		A5F1FF341A112D5400133D1C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1FF331A112D5400133D1C /* SecondViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		2545C6DB1A11301C008D9EE4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		25B8B7581A114FE200F0E1EE /* voiture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = voiture.png; sourceTree = "<group>"; };
 		A5F1FF2A1A112D5400133D1C /* SwiftSampleAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSampleAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F1FF2E1A112D5400133D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5F1FF2F1A112D5400133D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				2545C6DB1A11301C008D9EE4 /* ThirdViewController.swift */,
 				A5F1FF351A112D5400133D1C /* Main.storyboard */,
 				A5F1FF381A112D5400133D1C /* Images.xcassets */,
+				25B8B7581A114FE200F0E1EE /* voiture.png */,
 				A5F1FF3A1A112D5400133D1C /* LaunchScreen.xib */,
 				A5F1FF2D1A112D5400133D1C /* Supporting Files */,
 			);
@@ -198,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25B8B7591A114FE200F0E1EE /* voiture.png in Resources */,
 				A5F1FF371A112D5400133D1C /* Main.storyboard in Resources */,
 				A5F1FF3C1A112D5400133D1C /* LaunchScreen.xib in Resources */,
 				A5F1FF391A112D5400133D1C /* Images.xcassets in Resources */,

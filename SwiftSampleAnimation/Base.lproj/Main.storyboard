@@ -87,7 +87,7 @@
         <!--Physics-->
         <scene sceneID="WfJ-RJ-JzV">
             <objects>
-                <viewController id="oqh-Qr-U11" sceneMemberID="viewController">
+                <viewController id="oqh-Qr-U11" customClass="ThirdViewController" customModule="SwiftSampleAnimation" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Fo8-gQ-Ey8"/>
                         <viewControllerLayoutGuide type="bottom" id="dNN-W2-8GX"/>

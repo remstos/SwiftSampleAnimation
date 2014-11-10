@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2545C6DC1A11301C008D9EE4 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2545C6DB1A11301C008D9EE4 /* ThirdViewController.swift */; };
 		A5F1FF301A112D5400133D1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1FF2F1A112D5400133D1C /* AppDelegate.swift */; };
 		A5F1FF321A112D5400133D1C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1FF311A112D5400133D1C /* FirstViewController.swift */; };
 		A5F1FF341A112D5400133D1C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F1FF331A112D5400133D1C /* SecondViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2545C6DB1A11301C008D9EE4 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A5F1FF2A1A112D5400133D1C /* SwiftSampleAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSampleAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5F1FF2E1A112D5400133D1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A5F1FF2F1A112D5400133D1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				A5F1FF2F1A112D5400133D1C /* AppDelegate.swift */,
 				A5F1FF311A112D5400133D1C /* FirstViewController.swift */,
 				A5F1FF331A112D5400133D1C /* SecondViewController.swift */,
+				2545C6DB1A11301C008D9EE4 /* ThirdViewController.swift */,
 				A5F1FF351A112D5400133D1C /* Main.storyboard */,
 				A5F1FF381A112D5400133D1C /* Images.xcassets */,
 				A5F1FF3A1A112D5400133D1C /* LaunchScreen.xib */,
@@ -217,6 +220,7 @@
 			files = (
 				A5F1FF341A112D5400133D1C /* SecondViewController.swift in Sources */,
 				A5F1FF301A112D5400133D1C /* AppDelegate.swift in Sources */,
+				2545C6DC1A11301C008D9EE4 /* ThirdViewController.swift in Sources */,
 				A5F1FF321A112D5400133D1C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				A5F1FF4D1A112D5400133D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5F1FF4E1A112D5400133D1C /* Build configuration list for PBXNativeTarget "SwiftSampleAnimationTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				A5F1FF501A112D5400133D1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

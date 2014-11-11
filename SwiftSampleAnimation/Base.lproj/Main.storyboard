@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B17" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Animations-->
@@ -93,11 +94,66 @@
                         <viewControllerLayoutGuide type="bottom" id="dNN-W2-8GX"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XCJ-qU-x9G">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5T9-wf-9tu">
+                                <rect key="frame" x="16" y="70" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="i9E-5N-SFo"/>
+                                    <constraint firstAttribute="width" constant="60" id="ofS-lD-yWb"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9P9-EX-QmB">
+                                <rect key="frame" x="270" y="70" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Cbt-ur-rRn"/>
+                                    <constraint firstAttribute="width" constant="60" id="Cpp-PZ-Gt1"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSq-Zt-asD">
+                                <rect key="frame" x="524" y="70" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.0" green="0.80784313730000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="Xy8-Uy-rjb"/>
+                                    <constraint firstAttribute="height" constant="60" id="fgi-MU-3g9"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmG-q6-MxM">
+                                <rect key="frame" x="265" y="256" width="70" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LBa-r1-iew"/>
+                                    <constraint firstAttribute="width" constant="70" id="rOg-nb-lFR"/>
+                                </constraints>
+                                <state key="normal" title="Fall !">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letsFall:" destination="oqh-Qr-U11" eventType="touchUpInside" id="YX4-mt-n7H"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5T9-wf-9tu" firstAttribute="leading" secondItem="XCJ-qU-x9G" secondAttribute="leadingMargin" id="0Sl-Bu-dn1"/>
+                            <constraint firstAttribute="centerX" secondItem="GmG-q6-MxM" secondAttribute="centerX" id="1bI-5w-jAN"/>
+                            <constraint firstAttribute="centerX" secondItem="9P9-EX-QmB" secondAttribute="centerX" id="BHR-HL-oKK"/>
+                            <constraint firstItem="cSq-Zt-asD" firstAttribute="trailing" secondItem="XCJ-qU-x9G" secondAttribute="trailingMargin" id="Bwq-UM-dC1"/>
+                            <constraint firstItem="5T9-wf-9tu" firstAttribute="top" secondItem="Fo8-gQ-Ey8" secondAttribute="bottom" constant="50" id="Miq-aI-brZ"/>
+                            <constraint firstItem="5T9-wf-9tu" firstAttribute="top" secondItem="9P9-EX-QmB" secondAttribute="top" id="mEy-AJ-LGy"/>
+                            <constraint firstItem="9P9-EX-QmB" firstAttribute="top" secondItem="cSq-Zt-asD" secondAttribute="top" id="qNt-4U-MbP"/>
+                            <constraint firstAttribute="centerY" secondItem="GmG-q6-MxM" secondAttribute="centerY" id="rzF-uf-gq6"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="Physics" image="physic" id="grg-e5-n0O"/>
+                    <connections>
+                        <outlet property="ballOne" destination="5T9-wf-9tu" id="gRe-hY-4ja"/>
+                        <outlet property="ballThree" destination="cSq-Zt-asD" id="xNt-Sw-W4s"/>
+                        <outlet property="ballTwo" destination="9P9-EX-QmB" id="vpg-jf-B9n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YNf-DK-ZeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,4 +185,5 @@
         <image name="gesture" width="30" height="30"/>
         <image name="physic" width="30" height="30"/>
     </resources>
+    <color key="tintColor" red="0.0" green="0.80784313730000001" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>

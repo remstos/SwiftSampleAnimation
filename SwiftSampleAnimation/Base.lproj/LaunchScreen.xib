@@ -16,10 +16,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="AKY-qc-dk4"/>
                     </constraints>
-                    <items>
-                        <tabBarItem systemItem="favorites" id="dW7-U9-Jap"/>
-                        <tabBarItem systemItem="more" id="uUn-aC-Mcq"/>
-                    </items>
+                    <items/>
                 </tabBar>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

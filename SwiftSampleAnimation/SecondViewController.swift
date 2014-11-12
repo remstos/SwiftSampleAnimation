@@ -10,31 +10,82 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet var roundGesture: UIImageView!
+    @IBOutlet var carImageView: UIImageView!
     
-    @IBOutlet var Vroum: UILabel!
+    @IBOutlet weak var bigView: UIView!
+    @IBOutlet var centerLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Vroum.hidden = true
-        roundGesture.layer.cornerRadius = roundGesture.frame.size.width/2
+        centerLabel.hidden = true
     }
 
-    @IBAction func GestureRound(sender: UIPanGestureRecognizer) {
+    func showCenterLabelWithText(text:String) {
+        centerLabel.hidden = false
+        centerLabel.text = text
+    }
+    
+    
+    @IBAction func carPanGestureRecognized(sender: UIPanGestureRecognizer) {
         let center = sender.locationInView(self.view)
-        roundGesture.center.x = center.x
-        Vroum.hidden = false
+        carImageView.center.x = center.x
+        showCenterLabelWithText("VROOM !!")
+        
         if(sender.state == UIGestureRecognizerState.Ended){
-            Vroum.hidden = true
+            centerLabel.hidden = true
         }
         
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    
+    //Gestures on big view
+    @IBAction func tapGestureRecognized(sender: UITapGestureRecognizer) {
+        
+        showCenterLabelWithText("Tap")
+        
     }
+    
+    @IBAction func pinchGestureRecognized(sender: UIPinchGestureRecognizer) {
+        showCenterLabelWithText("Pinch")
+        bigView.transform = CGAffineTransformMakeScale(sender.scale, sender.scale)
+        if(sender.state == UIGestureRecognizerState.Ended){
+            bigView.transform = CGAffineTransformIdentity
+        }
+    }
+    
+    @IBAction func rotationGestureRecognized(sender: UIRotationGestureRecognizer) {
+        showCenterLabelWithText("Rotate")
+        bigView.transform = CGAffineTransformMakeRotation(sender.rotation)
+        if(sender.state == UIGestureRecognizerState.Ended){
+            bigView.transform = CGAffineTransformIdentity
+        }
+    }
+    
+    @IBAction func swipeGestureRecognized(sender: UISwipeGestureRecognizer) {
+        
+        switch sender.direction {
+        case UISwipeGestureRecognizerDirection.Left:
+                showCenterLabelWithText("Swipe left")
+                break
+        case UISwipeGestureRecognizerDirection.Down:
+            showCenterLabelWithText("Swipe down")
+            break
+        case UISwipeGestureRecognizerDirection.Right:
+            showCenterLabelWithText("Swipe right")
+            break
+        case UISwipeGestureRecognizerDirection.Up:
+            showCenterLabelWithText("Swipe up")
+            break
+        default:
+            showCenterLabelWithText("Swipe ?")
+            break
+        }
 
+    }
+    @IBAction func longPressGestureRecognized(sender: UILongPressGestureRecognizer) {
+        showCenterLabelWithText("Long press")
 
+    }
 }
 
